@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منوی دیجیتال</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <h1>رستوران لذیذ</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="جستجو در منو..." id="searchInput">
+                <i class="fas fa-search"></i>
+            </div>
+        </header>
+
+        <nav class="category-nav">
+            <button class="category-btn active" data-category="all">
+                <i class="fas fa-th-large"></i>
+                همه
+            </button>
+            <button class="category-btn" data-category="appetizers">
+                <i class="fas fa-carrot"></i>
+                پیش غذا
+            </button>
+            <button class="category-btn" data-category="main">
+                <i class="fas fa-drumstick-bite"></i>
+                غذای اصلی
+            </button>
+            <button class="category-btn" data-category="drinks">
+                <i class="fas fa-wine-glass"></i>
+                نوشیدنی
+            </button>
+            <button class="category-btn" data-category="desserts">
+                <i class="fas fa-ice-cream"></i>
+                دسر
+            </button>
+        </nav>
+
+        <main class="menu-container">
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </main>
+
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3><i class="fas fa-shopping-cart"></i> سبد خرید</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be populated by JavaScript -->
+            </div>
+            <div class="cart-footer">
+                <div class="total">
+                    <span>مجموع:</span>
+                    <span id="totalPrice">0 تومان</span>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-credit-card"></i>
+                    پرداخت
+                </button>
+            </div>
+        </div>
+
+        <button class="cart-toggle" id="cartToggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
