@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منوی دیجیتال رستوران</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <h1>رستوران طعم اصیل</h1>
+            </div>
+            <p class="tagline">بهترین غذاهای سنتی و مدرن</p>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="جستجو در منو...">
+            </div>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="category-btn active" data-category="all">همه</button>
+            <button class="category-btn" data-category="appetizers">پیش غذا</button>
+            <button class="category-btn" data-category="main-dishes">غذای اصلی</button>
+            <button class="category-btn" data-category="desserts">دسر</button>
+            <button class="category-btn" data-category="beverages">نوشیدنی</button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu-container">
+            <!-- Appetizers -->
+            <section class="menu-category" data-category="appetizers">
+                <h2 class="category-title">
+                    <i class="fas fa-seedling"></i>
+                    پیش غذاها
+                </h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=300&h=200&fit=crop" alt="کاشک بادمجان">
+                            <div class="item-badge">محبوب</div>
+                        </div>
+                        <div class="item-content">
+                            <h3>کاشک بادمجان</h3>
+                            <p>بادمجان کبابی با کاشک خوشمزه و نعنا</p>
+                            <div class="item-footer">
+                                <span class="price">۸۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1564834724105-918b73d1b9e0?w=300&h=200&fit=crop" alt="میرزا قاسمی">
+                        </div>
+                        <div class="item-content">
+                            <h3>میرزا قاسمی</h3>
+                            <p>بادمجان کبابی با تخم مرغ و گوجه فرنگی</p>
+                            <div class="item-footer">
+                                <span class="price">۷۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=300&h=200&fit=crop" alt="سالاد شیرازی">
+                        </div>
+                        <div class="item-content">
+                            <h3>سالاد شیرازی</h3>
+                            <p>سالاد تازه با خیار، گوجه و پیاز</p>
+                            <div class="item-footer">
+                                <span class="price">۴۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Dishes -->
+            <section class="menu-category" data-category="main-dishes">
+                <h2 class="category-title">
+                    <i class="fas fa-fire"></i>
+                    غذاهای اصلی
+                </h2>
+                <div class="menu-grid">
+                    <div class="menu-item featured">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300&h=200&fit=crop" alt="چلو کباب کوبیده">
+                            <div class="item-badge special">ویژه</div>
+                        </div>
+                        <div class="item-content">
+                            <h3>چلو کباب کوبیده</h3>
+                            <p>کباب کوبیده مخصوص با برنج ایرانی و سبزی</p>
+                            <div class="item-footer">
+                                <span class="price">۱۸۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=300&h=200&fit=crop" alt="قورمه سبزی">
+                        </div>
+                        <div class="item-content">
+                            <h3>قورمه سبزی</h3>
+                            <p>خورش سنتی با گوشت، سبزی و لوبیا قرمز</p>
+                            <div class="item-footer">
+                                <span class="price">۱۶۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=200&fit=crop" alt="فسنجان">
+                        </div>
+                        <div class="item-content">
+                            <h3>فسنجان</h3>
+                            <p>خورش مرغ با آلو و گردو</p>
+                            <div class="item-footer">
+                                <span class="price">۱۷۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=300&h=200&fit=crop" alt="زرشک پلو با مرغ">
+                        </div>
+                        <div class="item-content">
+                            <h3>زرشک پلو با مرغ</h3>
+                            <p>برنج زعفرانی با زرشک و مرغ</p>
+                            <div class="item-footer">
+                                <span class="price">۱۵۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Desserts -->
+            <section class="menu-category" data-category="desserts">
+                <h2 class="category-title">
+                    <i class="fas fa-ice-cream"></i>
+                    دسرها
+                </h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=300&h=200&fit=crop" alt="فالوده">
+                        </div>
+                        <div class="item-content">
+                            <h3>فالوده</h3>
+                            <p>دسر سنتی با نشاسته و آب لیمو</p>
+                            <div class="item-footer">
+                                <span class="price">۶۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&h=200&fit=crop" alt="بستنی زعفرانی">
+                        </div>
+                        <div class="item-content">
+                            <h3>بستنی زعفرانی</h3>
+                            <p>بستنی خانگی با طعم زعفران</p>
+                            <div class="item-footer">
+                                <span class="price">۵۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Beverages -->
+            <section class="menu-category" data-category="beverages">
+                <h2 class="category-title">
+                    <i class="fas fa-coffee"></i>
+                    نوشیدنی‌ها
+                </h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=300&h=200&fit=crop" alt="چای سنتی">
+                        </div>
+                        <div class="item-content">
+                            <h3>چای سنتی</h3>
+                            <p>چای تازه دم با قند و نبات</p>
+                            <div class="item-footer">
+                                <span class="price">۲۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=300&h=200&fit=crop" alt="دوغ">
+                        </div>
+                        <div class="item-content">
+                            <h3>دوغ خانگی</h3>
+                            <p>دوغ تازه با نعنا و خیار</p>
+                            <div class="item-footer">
+                                <span class="price">۳۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=300&h=200&fit=crop" alt="آب انار">
+                        </div>
+                        <div class="item-content">
+                            <h3>آب انار طبیعی</h3>
+                            <p>آب انار تازه و طبیعی</p>
+                            <div class="item-footer">
+                                <span class="price">۴۵,۰۰۰ تومان</span>
+                                <button class="add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart-container">
+            <button class="cart-toggle" id="cartToggle">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <div class="cart-panel" id="cartPanel">
+                <div class="cart-header">
+                    <h3>سفارش شما</h3>
+                    <button class="cart-close" id="cartClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>سبد خرید شما خالی است</p>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>مجموع: <span id="cartTotal">۰ تومان</span></span>
+                    </div>
+                    <button class="checkout-btn" id="checkoutBtn">
+                        <i class="fas fa-credit-card"></i>
+                        تکمیل سفارش
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>۰۲۱-۱۲۳۴۵۶۷۸</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>تهران، خیابان ولیعصر، پلاک ۱۲۳</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>روزانه ۱۲:۰۰ تا ۲۴:۰۰</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
