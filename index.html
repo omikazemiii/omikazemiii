@@ -3,81 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منوی دیجیتال</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>به زودی | وبسایت جدید</title>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="logo">
-                <i class="fas fa-utensils"></i>
-                <h1>رستوران لذیذ</h1>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="جستجو در منو..." id="searchInput">
-                <i class="fas fa-search"></i>
+    <div class="background-shapes">
+        <span class="shape s1"></span>
+        <span class="shape s2"></span>
+        <span class="shape s3"></span>
+    </div>
+
+    <main class="page">
+        <header class="brand">
+            <div class="logo">OM</div>
+            <div class="brand-text">
+                <p class="eyebrow">نسخه جدید در راه است</p>
+                <h1>یک تجربه تازه به زودی در دسترس شماست</h1>
             </div>
         </header>
 
-        <nav class="category-nav">
-            <button class="category-btn active" data-category="all">
-                <i class="fas fa-th-large"></i>
-                همه
-            </button>
-            <button class="category-btn" data-category="appetizers">
-                <i class="fas fa-carrot"></i>
-                پیش غذا
-            </button>
-            <button class="category-btn" data-category="main">
-                <i class="fas fa-drumstick-bite"></i>
-                غذای اصلی
-            </button>
-            <button class="category-btn" data-category="drinks">
-                <i class="fas fa-wine-glass"></i>
-                نوشیدنی
-            </button>
-            <button class="category-btn" data-category="desserts">
-                <i class="fas fa-ice-cream"></i>
-                دسر
-            </button>
-        </nav>
-
-        <main class="menu-container">
-            <div class="menu-grid" id="menuGrid">
-                <!-- Menu items will be populated by JavaScript -->
-            </div>
-        </main>
-
-        <div class="cart-sidebar" id="cartSidebar">
-            <div class="cart-header">
-                <h3><i class="fas fa-shopping-cart"></i> سبد خرید</h3>
-                <button class="close-cart" id="closeCart">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="cart-items" id="cartItems">
-                <!-- Cart items will be populated by JavaScript -->
-            </div>
-            <div class="cart-footer">
-                <div class="total">
-                    <span>مجموع:</span>
-                    <span id="totalPrice">0 تومان</span>
+        <section class="hero">
+            <div class="card glass">
+                <p class="pretitle">Coming Soon</p>
+                <h2>ما در حال نهایی کردن جزئیات هستیم</h2>
+                <p class="lead">پلتفرم جدید با طراحی مدرن، عملکرد سریع و امکانات هوشمند در حال آماده‌سازی است. ایمیل خود را وارد کنید تا اولین نفری باشید که از انتشار آن باخبر می‌شود.</p>
+                <form class="notify-form">
+                    <div class="field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="ایمیل شما" aria-label="ایمیل">
+                    </div>
+                    <button type="button" class="primary-btn">اطلاع رسانی</button>
+                </form>
+                <div class="meta">
+                    <div class="meta-item">
+                        <span class="label">تاریخ لانچ</span>
+                        <strong>۱۴۰۳/۱۰/۰۱</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span class="label">وضعیت پروژه</span>
+                        <div class="progress">
+                            <span style="width: 78%"></span>
+                        </div>
+                        <small>۷۸٪ تکمیل شده</small>
+                    </div>
+                    <div class="meta-item">
+                        <span class="label">شبکه‌های اجتماعی</span>
+                        <div class="socials">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <button class="checkout-btn">
-                    <i class="fas fa-credit-card"></i>
-                    پرداخت
-                </button>
             </div>
-        </div>
 
-        <button class="cart-toggle" id="cartToggle">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="cart-count" id="cartCount">0</span>
-        </button>
-    </div>
-
-    <script src="script.js"></script>
+            <div class="card steps">
+                <h3>مسیر آماده‌سازی</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-lightbulb"></i></span>
+                        <div>
+                            <strong>ایده و تحقیق</strong>
+                            <p>جمع‌آوری نیازها و طراحی تجربه کاربری نو.</p>
+                        </div>
+                        <span class="status done">انجام شد</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                        <div>
+                            <strong>طراحی و توسعه</strong>
+                            <p>پیاده‌سازی رابط کاربری با استانداردهای مدرن.</p>
+                        </div>
+                        <span class="status active">در حال انجام</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-rocket"></i></span>
+                        <div>
+                            <strong>تست و لانچ</strong>
+                            <p>بهینه‌سازی نهایی و استقرار روی سرورها.</p>
+                        </div>
+                        <span class="status pending">به زودی</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
